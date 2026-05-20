@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Rubin IDAC Resources Dashboard</title>
+
+  <!-- Tabler core (Bootstrap 5 dashboard template) -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta20/dist/css/tabler.min.css">
+
+  <!-- Leaflet for the world map -->
+  <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="">
+
+  <!-- Local overrides on top of Tabler -->
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+
+<!--
+  Configure the repo location once here. The dashboard renders an
+  "Edit on GitHub" link beside each IDAC, pointing at the YAML for that
+  country in this repo at the given branch.
+-->
+<body data-repo="https://github.com/REPLACE-ME/rubin-idac-dashboard"
+      data-branch="main">
+
+<div class="page">
+
+  <!-- ===== Top navbar ===== -->
+  <header class="navbar navbar-expand-md navbar-dark d-print-none"
+          style="background:linear-gradient(135deg,#14233e,#1f4f8b);">
+    <div class="container-xl">
+      <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+        <a href=".">
+          <span style="font-weight:600;color:#fff;letter-spacing:0.3px;">
+            Rubin IDAC Dashboard
+          </span>
+        </a>
+      </h1>
+      <div class="navbar-nav flex-row order-md-last">
+        <div class="nav-item">
+          <a href="#" id="repo-link" class="nav-link px-2" target="_blank" rel="noopener" title="Source repository">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Page header ===== -->
+  <div class="page-header d-print-none">
+    <div class="container-xl">
+      <div class="row g-2 align-items-center">
+        <div class="col">
+          <h2 class="page-title">Independent Data Access Centers</h2>
+          <div class="text-secondary mt-1">
+            Compute, storage, and Rubin data products available at IDACs around the world &middot;
+            <span id="generated-stamp" class="text-muted"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Page body ===== -->
+  <div class="page-body">
+    <div class="container-xl">
+
+      <div id="loading" class="text-center py-6 text-secondary">
+        <div class="spinner-border" role="status"></div>
+        <div class="mt-2">Loading IDAC data&hellip;</div>
+      </div>
+
+      <div id="error" class="alert alert-danger" style="display:none"></div>
+
+      <div id="dashboard" style="display:none">
+
+        <!-- ===== Stats cards ===== -->
+        <div class="row row-deck row-cards" id="stats-row"></div>
+
+        <!-- ===== Map ===== -->
+        <div class="card mt-3">
+          <div class="card-header">
+            <h3 class="card-title">IDAC Locations</h3>
+            <div class="card-subtitle">
+              Marker size scales with total storage commitment. Click a marker for details.
+            </div>
+          </div>
+          <div class="card-body p-0">
+            <div id="map" style="height:480px;border-radius:0 0 4px 4px;"></div>
+          </div>
+        </div>
+
+        <!-- ===== Comparison table ===== -->
+        <div class="card mt-3">
+          <div class="card-header">
+            <h3 class="card-title">IDAC Comparison</h3>
+            <div class="card-subtitle">
+              Click a column header to sort. Click a country name to jump to its full profile below.
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-vcenter card-table" id="comparison-table">
+              <thead>
+                <tr>
+                  <th class="sortable" data-key="country">Country</th>
+                  <th class="text-end sortable" data-key="storage_pb_years">Storage<br><small class="text-muted">PB-yr</small></th>
+                  <th class="text-end sortable" data-key="free_storage_pb_years">Free storage<br><small class="text-muted">PB-yr</small></th>
+                  <th class="text-end sortable" data-key="cpu_mhrs">CPU<br><small class="text-muted">Mhrs</small></th>
+                  <th class="text-end sortable" data-key="free_cpu_mhrs">Free CPU<br><small class="text-muted">Mhrs</small></th>
+                  <th class="text-end sortable" data-key="gpu_mhrs">GPU<br><small class="text-muted">Mhrs</small></th>
+                  <th class="text-end sortable" data-key="expected_local_users">Local users</th>
+                  <th class="sortable" data-key="product_count">Products</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ===== Data products matrix ===== -->
+        <div class="card mt-3">
+          <div class="card-header">
+            <h3 class="card-title">Rubin Data Products Hosted</h3>
+            <div class="card-subtitle">Filled cells indicate the data product will be available at that IDAC.</div>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table matrix-table" id="products-matrix"></table>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Per-IDAC detail cards ===== -->
+        <div class="page-header mt-4">
+          <h2 class="page-title">IDAC Profiles</h2>
+          <div class="text-secondary mt-1">
+            Full information per IDAC, including software, hardware, datasets, contacts and onboarding links.
+          </div>
+        </div>
+        <div class="row row-cards mt-2" id="idac-profiles"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer footer-transparent d-print-none mt-5">
+    <div class="container-xl">
+      <div class="row text-center align-items-center flex-row-reverse">
+        <div class="col-lg-auto ms-lg-auto">
+          <ul class="list-inline list-inline-dots mb-0">
+            <li class="list-inline-item">
+              <a href="https://rubinobservatory.org/" class="link-secondary" target="_blank" rel="noopener">
+                Vera C. Rubin Observatory
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" id="repo-link-footer" class="link-secondary" target="_blank" rel="noopener">
+                Source on GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+          <ul class="list-inline list-inline-dots mb-0">
+            <li class="list-inline-item">
+              Built with <a href="https://tabler.io/" target="_blank" rel="noopener" class="link-secondary">Tabler</a>
+              &middot; data from the
+              <a href="https://docs.google.com/spreadsheets/d/1r6JH0_5ROdSZ7I9_N4eSEHGbYgOO2QOwW_70IGo8RSg/edit"
+                 target="_blank" rel="noopener" class="link-secondary">IDAC Capabilities sheet</a>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta20/dist/js/tabler.min.js" defer></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+<!-- App -->
+<script src="assets/app.js"></script>
+
+</body>
+</html>

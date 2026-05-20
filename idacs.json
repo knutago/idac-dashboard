@@ -1,0 +1,853 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-20T17:25:19.002546+00:00",
+  "count": 13,
+  "idacs": [
+    {
+      "country": "Argentina",
+      "slug": "argentina",
+      "location": {
+        "city": "La Plata",
+        "institution": "Facultad de Ciencias Astronómicas (UNLP)",
+        "lat": -34.908,
+        "lng": -57.953
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": false,
+        "source_table": false,
+        "forced_source_table": false,
+        "dia_object_table": false,
+        "dia_source_table": false,
+        "solar_system_tables": false,
+        "co_added_images": false,
+        "visit_images": false,
+        "difference_images": false,
+        "template_images": false,
+        "other_data_products": true
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": null,
+        "free_storage_pb_years": 2,
+        "cpu_mhrs": null,
+        "free_cpu_mhrs": null,
+        "gpu_mhrs": null,
+        "free_gpu_mhrs": null,
+        "hosted_data_pb_years": null,
+        "expected_local_users": null
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "hipsdb tables for fast search and cross matching. image stamps DIA analysis. Mask and global properties maps for sample selection\n",
+      "complementary_datasets": "user generated dataproducts, selected transients and variable data from follow-ups datasets\n",
+      "use_cases": "Fast Correlation functions and cross-matching.\nVoids and Systems of Galaxies detection and classification.\nStreams and MW Satellite galaxies detection.\nDIA algorithms for heterogeneous transient follow-ups.\n",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [],
+      "notes": "grants frozen in Argentina.\n",
+      "_source_file": "data/idacs/argentina.yaml"
+    },
+    {
+      "country": "Australia",
+      "slug": "australia",
+      "location": {
+        "city": "Perth",
+        "institution": "Pawsey Supercomputing Centre",
+        "lat": -31.978,
+        "lng": 115.819
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": false,
+        "source_table": false,
+        "forced_source_table": false,
+        "dia_object_table": false,
+        "dia_source_table": false,
+        "solar_system_tables": false,
+        "co_added_images": false,
+        "visit_images": false,
+        "difference_images": false,
+        "template_images": false,
+        "other_data_products": true
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": 20,
+        "free_storage_pb_years": 12.7,
+        "cpu_mhrs": 65,
+        "free_cpu_mhrs": 63.6,
+        "gpu_mhrs": 65,
+        "free_gpu_mhrs": 63.6,
+        "hosted_data_pb_years": 6.5,
+        "expected_local_users": 26
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "Multipurpose science platform, with Slurm for job scheduling, EasyBuild for software modules, Lustre for storage\n",
+      "complementary_datasets": "Local copy of LIGO data, MeerKAT SKA pulsar timing data, Gaia, MWA, etc.\n",
+      "use_cases": "Cross-match LSST catalog objects with those from other optical (e.g. ESO, AAT) and radio survey (e.g. MWA)  data held\n",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [],
+      "notes": "",
+      "_source_file": "data/idacs/australia.yaml"
+    },
+    {
+      "country": "Brazil",
+      "slug": "brazil",
+      "location": {
+        "city": "Rio de Janeiro",
+        "institution": "LIneA",
+        "lat": -22.953,
+        "lng": -43.176
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": false,
+        "source_table": false,
+        "forced_source_table": false,
+        "dia_object_table": false,
+        "dia_source_table": false,
+        "solar_system_tables": false,
+        "co_added_images": true,
+        "visit_images": false,
+        "difference_images": false,
+        "template_images": false,
+        "other_data_products": true
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": 65,
+        "free_storage_pb_years": 65,
+        "cpu_mhrs": 56,
+        "free_cpu_mhrs": 54.8,
+        "gpu_mhrs": null,
+        "free_gpu_mhrs": null,
+        "hosted_data_pb_years": 6.5,
+        "expected_local_users": 26
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "LIneA Science Platform (LSP) with Jupyter notebooks, combining upgraded science server as deployed at NCSA with new user query (based on Daiquiri platform) and x-match service (based on LDSB); photo-z server, solar system portal, cluster analysis and visualization server (CANVAS); HPC cluster (Slurm, Open OnDemand); PostgreSQL.\n",
+      "complementary_datasets": "Survey property maps (e.g. masks; depth); photo-z tables, spectroscopic redshift samples, training sets; cluster and stellar system candidate list updated with each DR;  regularly updated list of occultation events; SDSS and DES object catalogs; all-sky hips image\n",
+      "use_cases": "Photo-z's; galaxy clusters; resolved stars; visualization; crossmatches; occultation events\n",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Carlos Adean",
+          "email": "carlosadean@linea.org.br",
+          "role": "Technical contact"
+        },
+        {
+          "name": "Luiz Da Costa",
+          "email": "ldacosta@linea.org.br",
+          "role": "Programmatic contacts"
+        },
+        {
+          "name": "Julia Gschwend",
+          "email": "julia@linea.org.br",
+          "role": "Programmatic contacts"
+        }
+      ],
+      "notes": "",
+      "_source_file": "data/idacs/brazil.yaml"
+    },
+    {
+      "country": "Canada",
+      "slug": "canada",
+      "location": {
+        "city": "Victoria",
+        "institution": "Canadian Astronomy Data Centre (NRC Herzberg)",
+        "lat": 48.519,
+        "lng": -123.418
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": false,
+        "source_table": false,
+        "forced_source_table": false,
+        "dia_object_table": false,
+        "dia_source_table": false,
+        "solar_system_tables": true,
+        "co_added_images": true,
+        "visit_images": false,
+        "difference_images": false,
+        "template_images": false,
+        "other_data_products": true
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": 186,
+        "free_storage_pb_years": 186.4,
+        "cpu_mhrs": 630,
+        "free_cpu_mhrs": 473,
+        "gpu_mhrs": null,
+        "free_gpu_mhrs": null,
+        "hosted_data_pb_years": 138,
+        "expected_local_users": 150
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "CAOM interface, CANFAR science platform, Firefly/Rubin Portal, TAP, QServ/sharded DB, Multi-Messanger Alerts DB\n",
+      "complementary_datasets": "SKA, Euclid, and CADC Archives\n",
+      "use_cases": "",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Ryan Taylor",
+          "email": "rptaylor@uvic.ca",
+          "role": "Technical contacts"
+        },
+        {
+          "name": "Stephen Gwyn",
+          "email": "Stephen.Gwyn@nrc-cnrc.gc.ca",
+          "role": "Programmatic contacts"
+        },
+        {
+          "name": "Brian Major",
+          "email": "Brian.Major@nrc-cnrc.gc.ca",
+          "role": "Programmatic contacts"
+        },
+        {
+          "name": "John Ouellette",
+          "email": "John.Ouellette@nrc-cnrc.gc.ca",
+          "role": "Programmatic contacts"
+        },
+        {
+          "name": "JJ Kavelaars",
+          "email": "JJ.Kavelaars@nrc-cnrc.gc.ca",
+          "role": "Programmatic contacts"
+        },
+        {
+          "name": "Sharon Goliath",
+          "email": "Sharon.Goliath@nrc-cnrc.gc.ca",
+          "role": "Programmatic contacts"
+        },
+        {
+          "name": "Adrian Damian",
+          "email": "Adrian.Damian@nrc-cnrc.gc.ca",
+          "role": "Programmatic contacts"
+        },
+        {
+          "name": "Pat Dowler",
+          "email": "patrick.dowler@nrc-cnrc.gc.ca",
+          "role": "Programmatic contacts"
+        },
+        {
+          "name": "Isabella Ghiurea",
+          "email": "Isabella.Ghiurea@nrc-cnrc.gc.ca",
+          "role": "Programmatic contacts"
+        }
+      ],
+      "notes": "Includes support for public archive\n",
+      "_source_file": "data/idacs/canada.yaml"
+    },
+    {
+      "country": "Croatia",
+      "slug": "croatia",
+      "location": {
+        "city": "Zagreb",
+        "institution": "Ruđer Bošković Institute / SRCE",
+        "lat": 45.825,
+        "lng": 15.978
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": false,
+        "source_table": false,
+        "forced_source_table": false,
+        "dia_object_table": false,
+        "dia_source_table": false,
+        "solar_system_tables": false,
+        "co_added_images": false,
+        "visit_images": false,
+        "difference_images": false,
+        "template_images": false,
+        "other_data_products": false
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": 9,
+        "free_storage_pb_years": 7.7,
+        "cpu_mhrs": 30,
+        "free_cpu_mhrs": 29.7,
+        "gpu_mhrs": null,
+        "free_gpu_mhrs": null,
+        "hosted_data_pb_years": 1.3,
+        "expected_local_users": 7
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "Access through secure VPN channel & IP filtering (need to be arranged in advance)\nOS Redhat, command prompt + Slurm workload manager, MPI for parallel computing, conda environment\n",
+      "complementary_datasets": "",
+      "use_cases": "Stellar astrophysics, including period finding, TRILEGAL Milky Way simulation, and microlensing light curves\n",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [],
+      "notes": "",
+      "_source_file": "data/idacs/croatia.yaml"
+    },
+    {
+      "country": "Denmark",
+      "slug": "denmark",
+      "location": {
+        "city": "Copenhagen",
+        "institution": "DARK / Niels Bohr Institute",
+        "lat": 55.696,
+        "lng": 12.57
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": false,
+        "source_table": false,
+        "forced_source_table": false,
+        "dia_object_table": false,
+        "dia_source_table": true,
+        "solar_system_tables": false,
+        "co_added_images": true,
+        "visit_images": false,
+        "difference_images": false,
+        "template_images": false,
+        "other_data_products": true
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": 65,
+        "free_storage_pb_years": 11.7,
+        "cpu_mhrs": 280,
+        "free_cpu_mhrs": 265.8,
+        "gpu_mhrs": 1,
+        "free_gpu_mhrs": 0.5,
+        "hosted_data_pb_years": 53,
+        "expected_local_users": 60
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "TBD\n",
+      "complementary_datasets": "Community-derived data products; Auxiliary data products relevant for transient + galaxy science such as SDSS, PS, WISE, VEXAS, KIDS, GALEX, Euclid\n",
+      "use_cases": "Special emphasis on transients, cosmology, galaxies, dark matter (serving especially DESC, TVS, SLS); AI/ML applications\n",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [],
+      "notes": "",
+      "_source_file": "data/idacs/denmark.yaml"
+    },
+    {
+      "country": "Japan",
+      "slug": "japan",
+      "location": {
+        "city": "Mitaka",
+        "institution": "National Astronomical Observatory of Japan (NAOJ)",
+        "lat": 35.675,
+        "lng": 139.541
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": false,
+        "source_table": false,
+        "forced_source_table": true,
+        "dia_object_table": false,
+        "dia_source_table": true,
+        "solar_system_tables": false,
+        "co_added_images": true,
+        "visit_images": false,
+        "difference_images": false,
+        "template_images": false,
+        "other_data_products": true
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": 46,
+        "free_storage_pb_years": 35.2,
+        "cpu_mhrs": 141,
+        "free_cpu_mhrs": 138.3,
+        "gpu_mhrs": null,
+        "free_gpu_mhrs": null,
+        "hosted_data_pb_years": 9.75,
+        "expected_local_users": 35
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "Jupyter+Kubernetes platform built on HSC-SSP uses. Other interfaces such as Xpra desktop access and filesharing are under development. Database options include Postgresql, Citus, MapReduce distributed DB\n",
+      "complementary_datasets": "HSC and PFS data\nHow much and what types of Rubin data to be hosted: under discussion\nPFS spectra of transient, host galaxies and photo-z training sample taken by other in-kind contribution\n",
+      "use_cases": "Weak lensing cosmology, transients (incl. SNe), photo-z's, solar system sciences\n",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [],
+      "notes": "",
+      "_source_file": "data/idacs/japan.yaml"
+    },
+    {
+      "country": "Mexico",
+      "slug": "mexico",
+      "location": {
+        "city": "Puebla",
+        "institution": "INAOE",
+        "lat": 19.022,
+        "lng": -98.313
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": true,
+        "source_table": false,
+        "forced_source_table": false,
+        "dia_object_table": false,
+        "dia_source_table": false,
+        "solar_system_tables": false,
+        "co_added_images": true,
+        "visit_images": false,
+        "difference_images": false,
+        "template_images": false,
+        "other_data_products": false
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": 20,
+        "free_storage_pb_years": 16,
+        "cpu_mhrs": 31,
+        "free_cpu_mhrs": 30.5,
+        "gpu_mhrs": null,
+        "free_gpu_mhrs": null,
+        "hosted_data_pb_years": 3.25,
+        "expected_local_users": 10
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "Lustre file system, PostgreSQL, exploring RSP as interface\n",
+      "complementary_datasets": "",
+      "use_cases": "TBD\n",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [],
+      "notes": "",
+      "_source_file": "data/idacs/mexico.yaml"
+    },
+    {
+      "country": "Poland",
+      "slug": "poland",
+      "location": {
+        "city": "Poznań",
+        "institution": "Poznań Supercomputing and Networking Center",
+        "lat": 52.406,
+        "lng": 16.925
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": false,
+        "source_table": false,
+        "forced_source_table": false,
+        "dia_object_table": false,
+        "dia_source_table": false,
+        "solar_system_tables": false,
+        "co_added_images": false,
+        "visit_images": false,
+        "difference_images": false,
+        "template_images": false,
+        "other_data_products": true
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": 65,
+        "free_storage_pb_years": 57.3,
+        "cpu_mhrs": 56,
+        "free_cpu_mhrs": 54.8,
+        "gpu_mhrs": null,
+        "free_gpu_mhrs": null,
+        "hosted_data_pb_years": 6.5,
+        "expected_local_users": 26
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "Dedicated multipurpose science platform (Jupyter/SSH/UI on SLURM/Lustre using Docker Swarm/Singularity/CVMFS/Keycloak/OpenSearch/…)\n",
+      "complementary_datasets": "Local copies of Gaia, OGLE, SDSS, Vipers, Akari, other catalogs\n",
+      "use_cases": "Rubin-Gaia cross-match, Rubin-OGLE-ZTF cross-match along the Milky Way disk, Rubin-OGLE-VMC-DECam cross-match for Magellanic System, Preparation of a catalog of known variable stars in the Rubin sky, Construction of deep color-color and color-magnitude diagrams for Magellanic Clouds, Data from alerts for microlensing, LSST large-scale structure (LSS) analysis, Photometric Redshift estimation of galaxies from the LSST data, Quasar redshift estimation and brightness curves, photometric redshift (PZ) estimation of galaxies\n",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [],
+      "notes": "",
+      "_source_file": "data/idacs/poland.yaml"
+    },
+    {
+      "country": "Slovenia",
+      "slug": "slovenia",
+      "location": {
+        "city": "Ljubljana",
+        "institution": "University of Ljubljana",
+        "lat": 46.043,
+        "lng": 14.488
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": false,
+        "source_table": false,
+        "forced_source_table": false,
+        "dia_object_table": false,
+        "dia_source_table": false,
+        "solar_system_tables": false,
+        "co_added_images": false,
+        "visit_images": false,
+        "difference_images": false,
+        "template_images": false,
+        "other_data_products": false
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": 7,
+        "free_storage_pb_years": 3.2,
+        "cpu_mhrs": 20,
+        "free_cpu_mhrs": 19.7,
+        "gpu_mhrs": 3.25,
+        "free_gpu_mhrs": null,
+        "hosted_data_pb_years": null,
+        "expected_local_users": 5
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "TBD\n",
+      "complementary_datasets": "TBD\n",
+      "use_cases": "TBD\n",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [],
+      "notes": "",
+      "_source_file": "data/idacs/slovenia.yaml"
+    },
+    {
+      "country": "South Korea",
+      "slug": "south-korea",
+      "location": {
+        "city": "Daejeon",
+        "institution": "Korea Astronomy and Space Science Institute (KASI)",
+        "lat": 36.398,
+        "lng": 127.388
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": false,
+        "source_table": false,
+        "forced_source_table": false,
+        "dia_object_table": false,
+        "dia_source_table": false,
+        "solar_system_tables": false,
+        "co_added_images": true,
+        "visit_images": false,
+        "difference_images": false,
+        "template_images": false,
+        "other_data_products": true
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": 7,
+        "free_storage_pb_years": 3.2,
+        "cpu_mhrs": 20,
+        "free_cpu_mhrs": 19.7,
+        "gpu_mhrs": null,
+        "free_gpu_mhrs": null,
+        "hosted_data_pb_years": 3.25,
+        "expected_local_users": 5
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "Distributed PostgreSQL databases for catalogs, data exploration/visualization dashboard, object storage with API for image coadds, Kubernetes orchestration on Openstack platform\n",
+      "complementary_datasets": "user-generated data products\n",
+      "use_cases": "",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Chang Hee Ree",
+          "email": "chr@kasi.re.kr",
+          "role": null
+        }
+      ],
+      "notes": "",
+      "_source_file": "data/idacs/south-korea.yaml"
+    },
+    {
+      "country": "Spain",
+      "slug": "spain",
+      "location": {
+        "city": "Barcelona",
+        "institution": "Port d'Informació Científica (PIC) / IFAE",
+        "lat": 41.5,
+        "lng": 2.111
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": false,
+        "source_table": false,
+        "forced_source_table": false,
+        "dia_object_table": false,
+        "dia_source_table": false,
+        "solar_system_tables": false,
+        "co_added_images": false,
+        "visit_images": false,
+        "difference_images": false,
+        "template_images": false,
+        "other_data_products": false
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": 7,
+        "free_storage_pb_years": 3.2,
+        "cpu_mhrs": 21,
+        "free_cpu_mhrs": 20.4,
+        "gpu_mhrs": 20,
+        "free_gpu_mhrs": 0.8,
+        "hosted_data_pb_years": 3.25,
+        "expected_local_users": 8
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "CosmoHub:\nWeb portal for interactive exploration and distribution of massive cosmological datasets\nFull dataset plots (over all rows): May use sampling / Cone search tool / 1D histogram & 2D heatmap\nTAP + ADQL interfaces in development\n",
+      "complementary_datasets": "~15 different projects (Gaia, DES, PAU, Euclid, DESI, COSMOS, KiDS, GLADE, CFHTLenS, ...)\nincluding DESC DC2 (Object and Truth-match tables)\n",
+      "use_cases": "Catalog validation / exploration / crossmatch\nLarge Scale Structure algorithms (photo-z, 2-point correlation functions, ...)\nGalaxy simulations\n",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Jordi Delgado",
+          "email": "jordidem@pic.es",
+          "role": "Technical contacts"
+        },
+        {
+          "name": "Francesc Torradeflot",
+          "email": "torradeflot@pic.es",
+          "role": "Technical contacts"
+        },
+        {
+          "name": "Jorge Carretero",
+          "email": "carretero@pic.es",
+          "role": "Programmatic contacts"
+        },
+        {
+          "name": "Nacho Sevilla",
+          "email": "ignacio.sevilla@ciemat.es",
+          "role": "Programmatic contacts"
+        },
+        {
+          "name": "Pau Tallada",
+          "email": "tallada@pic.es",
+          "role": "Programmatic contacts"
+        }
+      ],
+      "notes": "",
+      "_source_file": "data/idacs/spain.yaml"
+    },
+    {
+      "country": "United Kingdom",
+      "slug": "united-kingdom",
+      "location": {
+        "city": "Edinburgh",
+        "institution": "Royal Observatory / UK Data Facility",
+        "lat": 55.923,
+        "lng": -3.187
+      },
+      "data_products": {
+        "object_table_subset": true,
+        "object_table": true,
+        "source_table": true,
+        "forced_source_table": true,
+        "dia_object_table": true,
+        "dia_source_table": true,
+        "solar_system_tables": true,
+        "co_added_images": true,
+        "visit_images": true,
+        "difference_images": false,
+        "template_images": true,
+        "other_data_products": true
+      },
+      "data_releases": [],
+      "capacity": {
+        "storage_pb_years": 2005,
+        "free_storage_pb_years": 10.9,
+        "cpu_mhrs": 61,
+        "free_cpu_mhrs": 41.1,
+        "gpu_mhrs": null,
+        "free_gpu_mhrs": null,
+        "hosted_data_pb_years": 1989,
+        "expected_local_users": 437
+      },
+      "hardware": {
+        "cpu_architecture": "",
+        "gpu_architecture": "",
+        "storage_type": "",
+        "network": ""
+      },
+      "software_services": "Full RSP deployment\nOptions to exploit technologies from ‘nearby’ programmes – such as SKA, Euclid, and Gaia\nRucio for distributed data management (tbc); Ctrl-BPS/ Parsl/ Slurm – batch processing for  HPC (tbc)\n",
+      "complementary_datasets": "LSST-VISTA fused products; crossmatch catalogues for topical surveys, Edinburgh Wide-field Astronomy Unit survey catalogues (via TAP)\n",
+      "use_cases": "Full range of science cases\nCo-location with Lasair Community Broker for transient science\n",
+      "documentation": [
+        {
+          "title": "Onboarding guide",
+          "url": ""
+        },
+        {
+          "title": "Science platform / user portal",
+          "url": ""
+        }
+      ],
+      "contacts": [
+        {
+          "name": "George Beckett",
+          "email": "george.beckett@ed.ac.uk",
+          "role": null
+        },
+        {
+          "name": "Mike Read",
+          "email": "mar@roe.ac.uk",
+          "role": null
+        }
+      ],
+      "notes": "Free CPU capacity does not include the UK Data Facility's significant resources for supporting database queries of full copy of catalog data\n",
+      "_source_file": "data/idacs/united-kingdom.yaml"
+    }
+  ]
+}

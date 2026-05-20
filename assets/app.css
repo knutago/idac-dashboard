@@ -1,0 +1,157 @@
+/* Local additions on top of Tabler */
+
+/* Tabler's .card-header is a flex row -- make the subtitle wrap onto its
+   own line below the title instead of crashing into it. */
+.card-header { flex-wrap: wrap; }
+.card-header > .card-subtitle {
+  flex-basis: 100%;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--tblr-secondary, #667382);
+}
+
+/* Map fills its card cleanly */
+#map { z-index: 0; }
+.leaflet-popup-content { font: inherit; font-size: 13px; }
+.leaflet-popup-content b { color: #1f4f8b; }
+
+/* Sortable column headers */
+.sortable {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.sortable:hover { background: #f4f6fa; }
+.sortable.sort-asc::after  { content: " ▲"; color: #1f4f8b; font-size: 10px; }
+.sortable.sort-desc::after { content: " ▼"; color: #1f4f8b; font-size: 10px; }
+
+/* Data-products matrix */
+.matrix-table { font-size: 12px; }
+.matrix-table th,
+.matrix-table td {
+  text-align: center;
+  border-right: 1px solid #eef0f4;
+  padding: 6px 8px;
+  vertical-align: middle;
+}
+.matrix-table thead th.product {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  height: 140px;
+  vertical-align: bottom;
+  background: #f8fafc;
+  font-weight: 500;
+}
+.matrix-table td.country-cell {
+  text-align: left;
+  font-weight: 500;
+  background: #fafbfd;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  white-space: nowrap;
+}
+.matrix-table td.country-cell a { color: #14233e; text-decoration: none; }
+.matrix-table td.country-cell a:hover { color: #1f4f8b; text-decoration: underline; }
+.matrix-table td.yes {
+  background: #d35224;
+  color: white;
+  font-weight: 700;
+}
+.matrix-table td.no { color: #d4d9e2; }
+
+/* IDAC profile cards */
+.profile-card .card-title {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.profile-card .card-subtitle {
+  font-size: 12px;
+  color: #889;
+  margin-bottom: 12px;
+}
+.profile-card .field-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #889;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+.profile-card .field-body {
+  font-size: 13px;
+  line-height: 1.55;
+  color: #1b2330;
+  white-space: pre-wrap;
+}
+.profile-card .field-body.is-empty {
+  color: #aab;
+  font-style: italic;
+}
+.profile-card .mini-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 4px;
+}
+.profile-card .mini-stat {
+  background: #f6f8fc;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+.profile-card .mini-stat .label {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #889;
+}
+.profile-card .mini-stat .value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1b2330;
+  margin-top: 2px;
+}
+.profile-card .mini-stat .sub {
+  font-size: 11px;
+  color: #6a7180;
+}
+
+.chip-list { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+.chip {
+  background: #f5cdbc;
+  color: #6a2a10;
+  border-radius: 12px;
+  padding: 2px 9px;
+  font-size: 11.5px;
+  font-weight: 500;
+}
+.chip.muted { background: #eef0f5; color: #aab; font-style: italic; }
+.chip.release { background: #d8e3f2; color: #1f4f8b; }
+
+.doc-link { display: inline-flex; align-items: center; gap: 4px; }
+.doc-link::before { content: "📄 "; }
+
+.contact-row { display: flex; flex-direction: column; gap: 1px; margin: 4px 0; }
+.contact-row .name { font-weight: 500; font-size: 13px; }
+.contact-row .email a { font-size: 12.5px; color: #1f4f8b; text-decoration: none; }
+.contact-row .email a:hover { text-decoration: underline; }
+.contact-row .role { font-size: 11px; color: #889; }
+
+.edit-link {
+  font-size: 12px;
+  color: #1f4f8b;
+  text-decoration: none;
+  border-top: 1px dashed #dde1e8;
+  display: block;
+  margin-top: 16px;
+  padding-top: 10px;
+}
+.edit-link:hover { text-decoration: underline; }
+
+/* Stat cards using Tabler patterns but with our accent color */
+.stat-card-icon {
+  background-color: #f5cdbc;
+  color: #d35224;
+}
