@@ -36,12 +36,12 @@
 }
 .matrix-table thead th.product {
   writing-mode: vertical-rl;
-  transform: rotate(180deg);
   white-space: nowrap;
   height: 140px;
   vertical-align: bottom;
   background: #f8fafc;
   font-weight: 500;
+  padding: 8px 4px;
 }
 .matrix-table td.country-cell {
   text-align: left;
