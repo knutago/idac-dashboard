@@ -10,10 +10,10 @@ country: "Croatia"
 slug: "croatia"
 
 location:
-  city:        "Zagreb"
-  institution: "Ruđer Bošković Institute / SRCE"
-  lat: 45.825
-  lng: 15.978
+  city:        "Rijeka"
+  institution: "Bura supercomputer, University of Rijeka"
+  lat: 45.327
+  lng: 14.442
 
 # === Rubin data products that will be hosted at this IDAC =================
 data_products:
