@@ -10,10 +10,10 @@ country: "Slovenia"
 slug: "slovenia"
 
 location:
-  city:        "Ljubljana"
-  institution: "University of Ljubljana"
-  lat: 46.043
-  lng: 14.488
+  city:        "Nova Gorica"
+  institution: "University of Nova Gorica"
+  lat: 45.9558
+  lng: 13.6461
 
 # === Rubin data products that will be hosted at this IDAC =================
 data_products:
