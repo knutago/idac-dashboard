@@ -68,6 +68,8 @@ use_cases: |
   Streams and MW Satellite galaxies detection.
   DIA algorithms for heterogeneous transient follow-ups.
 
+# === Science Collaboration agreements made ===========================
+
 # === Onboarding & documentation links (please fill in) ====================
 documentation:
   - title: "Onboarding guide"
@@ -81,4 +83,4 @@ contacts:
 
 # === Free-text notes ======================================================
 notes: |
-  grants frozen in Argentina.
+  
