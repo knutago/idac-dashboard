@@ -344,6 +344,9 @@
               <div class="field-label">Science use cases</div>
               ${textBlock(idac.use_cases)}
 
+              <div class="field-label">Science Collaboration agreements</div>
+              ${textBlock(idac.science_collaboration_agreements, "None recorded yet.")}
+
               <div class="field-label">Onboarding &amp; documentation</div>
               ${docsList(idac.documentation)}
 

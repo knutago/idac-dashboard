@@ -68,6 +68,9 @@ use_cases: |
   Full range of science cases
   Co-location with Lasair Community Broker for transient science
 
+# === Science Collaboration agreements made ===========================
+science_collaboration_agreements: ""
+
 # === Onboarding & documentation links (please fill in) ====================
 documentation:
   - title: "Onboarding guide"

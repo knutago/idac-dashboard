@@ -25,7 +25,8 @@ OUTPUT = ROOT / "idacs.json"
 REQUIRED_TOP_LEVEL = {
     "country", "slug", "location", "data_products", "data_releases",
     "capacity", "hardware", "software_services", "complementary_datasets",
-    "use_cases", "documentation", "contacts", "notes",
+    "use_cases", "science_collaboration_agreements",
+    "documentation", "contacts", "notes",
 }
 REQUIRED_LOCATION = {"city", "institution", "lat", "lng"}
 REQUIRED_PRODUCTS = {

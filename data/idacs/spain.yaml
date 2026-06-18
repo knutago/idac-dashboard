@@ -71,6 +71,9 @@ use_cases: |
   Large Scale Structure algorithms (photo-z, 2-point correlation functions, ...)
   Galaxy simulations
 
+# === Science Collaboration agreements made ===========================
+science_collaboration_agreements: ""
+
 # === Onboarding & documentation links (please fill in) ====================
 documentation:
   - title: "Onboarding guide"

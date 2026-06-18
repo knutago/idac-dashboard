@@ -65,6 +65,9 @@ complementary_datasets: |
 use_cases: |
   Rubin-Gaia cross-match, Rubin-OGLE-ZTF cross-match along the Milky Way disk, Rubin-OGLE-VMC-DECam cross-match for Magellanic System, Preparation of a catalog of known variable stars in the Rubin sky, Construction of deep color-color and color-magnitude diagrams for Magellanic Clouds, Data from alerts for microlensing, LSST large-scale structure (LSS) analysis, Photometric Redshift estimation of galaxies from the LSST data, Quasar redshift estimation and brightness curves, photometric redshift (PZ) estimation of galaxies
 
+# === Science Collaboration agreements made ===========================
+science_collaboration_agreements: ""
+
 # === Onboarding & documentation links (please fill in) ====================
 documentation:
   - title: "Onboarding guide"

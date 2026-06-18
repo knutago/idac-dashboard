@@ -247,6 +247,9 @@ def render_yaml(record: dict) -> str:
     for line in block[1:]:
         add(line)
     add("")
+    add("# === Science Collaboration agreements made ===========================")
+    add('science_collaboration_agreements: ""')
+    add("")
     add("# === Onboarding & documentation links (please fill in) ====================")
     add("documentation:")
     add('  - title: "Onboarding guide"')

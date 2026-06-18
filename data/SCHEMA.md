@@ -18,6 +18,7 @@ edit one, open a pull request, and once it merges the site rebuilds.
 | `software_services`      | string  | yes      | Description of the user-facing platform / batch system / databases. |
 | `complementary_datasets` | string  | yes      | Non-Rubin datasets co-located at this IDAC. |
 | `use_cases`              | string  | yes      | Science the site specializes in supporting. |
+| `science_collaboration_agreements` | string | yes | Rubin Science Collaboration agreements this IDAC has in place (free text — list collaborations, status, etc.). Empty string allowed. |
 | `documentation`          | list    | yes      | Onboarding / portal links (objects with `title`, `url`). |
 | `contacts`               | list    | yes      | Objects with `name`, `email`, `role`. |
 | `notes`                  | string  | yes      | Free-form caveats. May be empty. |

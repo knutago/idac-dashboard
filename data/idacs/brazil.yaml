@@ -65,6 +65,9 @@ complementary_datasets: |
 use_cases: |
   Photo-z's; galaxy clusters; resolved stars; visualization; crossmatches; occultation events
 
+# === Science Collaboration agreements made ===========================
+science_collaboration_agreements: ""
+
 # === Onboarding & documentation links (please fill in) ====================
 documentation:
   - title: "Onboarding guide"

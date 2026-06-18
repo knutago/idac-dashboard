@@ -64,6 +64,9 @@ complementary_datasets: |
 # === Science use cases this IDAC specializes in ===========================
 use_cases: ""
 
+# === Science Collaboration agreements made ===========================
+science_collaboration_agreements: ""
+
 # === Onboarding & documentation links (please fill in) ====================
 documentation:
   - title: "Onboarding guide"

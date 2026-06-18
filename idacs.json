@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-20T17:25:19.002546+00:00",
+  "generated_at": "2026-06-18T22:45:06.166070+00:00",
   "count": 13,
   "idacs": [
     {
@@ -46,6 +46,7 @@
       "software_services": "hipsdb tables for fast search and cross matching. image stamps DIA analysis. Mask and global properties maps for sample selection\n",
       "complementary_datasets": "user generated dataproducts, selected transients and variable data from follow-ups datasets\n",
       "use_cases": "Fast Correlation functions and cross-matching.\nVoids and Systems of Galaxies detection and classification.\nStreams and MW Satellite galaxies detection.\nDIA algorithms for heterogeneous transient follow-ups.\n",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",
@@ -57,7 +58,7 @@
         }
       ],
       "contacts": [],
-      "notes": "grants frozen in Argentina.\n",
+      "notes": "",
       "_source_file": "data/idacs/argentina.yaml"
     },
     {
@@ -103,6 +104,7 @@
       "software_services": "Multipurpose science platform, with Slurm for job scheduling, EasyBuild for software modules, Lustre for storage\n",
       "complementary_datasets": "Local copy of LIGO data, MeerKAT SKA pulsar timing data, Gaia, MWA, etc.\n",
       "use_cases": "Cross-match LSST catalog objects with those from other optical (e.g. ESO, AAT) and radio survey (e.g. MWA)  data held\n",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",
@@ -160,6 +162,7 @@
       "software_services": "LIneA Science Platform (LSP) with Jupyter notebooks, combining upgraded science server as deployed at NCSA with new user query (based on Daiquiri platform) and x-match service (based on LDSB); photo-z server, solar system portal, cluster analysis and visualization server (CANVAS); HPC cluster (Slurm, Open OnDemand); PostgreSQL.\n",
       "complementary_datasets": "Survey property maps (e.g. masks; depth); photo-z tables, spectroscopic redshift samples, training sets; cluster and stellar system candidate list updated with each DR;  regularly updated list of occultation events; SDSS and DES object catalogs; all-sky hips image\n",
       "use_cases": "Photo-z's; galaxy clusters; resolved stars; visualization; crossmatches; occultation events\n",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",
@@ -233,6 +236,7 @@
       "software_services": "CAOM interface, CANFAR science platform, Firefly/Rubin Portal, TAP, QServ/sharded DB, Multi-Messanger Alerts DB\n",
       "complementary_datasets": "SKA, Euclid, and CADC Archives\n",
       "use_cases": "",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",
@@ -336,6 +340,7 @@
       "software_services": "Access through secure VPN channel & IP filtering (need to be arranged in advance)\nOS Redhat, command prompt + Slurm workload manager, MPI for parallel computing, conda environment\n",
       "complementary_datasets": "",
       "use_cases": "Stellar astrophysics, including period finding, TRILEGAL Milky Way simulation, and microlensing light curves\n",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",
@@ -393,6 +398,7 @@
       "software_services": "TBD\n",
       "complementary_datasets": "Community-derived data products; Auxiliary data products relevant for transient + galaxy science such as SDSS, PS, WISE, VEXAS, KIDS, GALEX, Euclid\n",
       "use_cases": "Special emphasis on transients, cosmology, galaxies, dark matter (serving especially DESC, TVS, SLS); AI/ML applications\n",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",
@@ -450,6 +456,7 @@
       "software_services": "Jupyter+Kubernetes platform built on HSC-SSP uses. Other interfaces such as Xpra desktop access and filesharing are under development. Database options include Postgresql, Citus, MapReduce distributed DB\n",
       "complementary_datasets": "HSC and PFS data\nHow much and what types of Rubin data to be hosted: under discussion\nPFS spectra of transient, host galaxies and photo-z training sample taken by other in-kind contribution\n",
       "use_cases": "Weak lensing cosmology, transients (incl. SNe), photo-z's, solar system sciences\n",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",
@@ -507,6 +514,7 @@
       "software_services": "Lustre file system, PostgreSQL, exploring RSP as interface\n",
       "complementary_datasets": "",
       "use_cases": "TBD\n",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",
@@ -564,6 +572,7 @@
       "software_services": "Dedicated multipurpose science platform (Jupyter/SSH/UI on SLURM/Lustre using Docker Swarm/Singularity/CVMFS/Keycloak/OpenSearch/…)\n",
       "complementary_datasets": "Local copies of Gaia, OGLE, SDSS, Vipers, Akari, other catalogs\n",
       "use_cases": "Rubin-Gaia cross-match, Rubin-OGLE-ZTF cross-match along the Milky Way disk, Rubin-OGLE-VMC-DECam cross-match for Magellanic System, Preparation of a catalog of known variable stars in the Rubin sky, Construction of deep color-color and color-magnitude diagrams for Magellanic Clouds, Data from alerts for microlensing, LSST large-scale structure (LSS) analysis, Photometric Redshift estimation of galaxies from the LSST data, Quasar redshift estimation and brightness curves, photometric redshift (PZ) estimation of galaxies\n",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",
@@ -621,6 +630,7 @@
       "software_services": "TBD\n",
       "complementary_datasets": "TBD\n",
       "use_cases": "TBD\n",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",
@@ -678,6 +688,7 @@
       "software_services": "Distributed PostgreSQL databases for catalogs, data exploration/visualization dashboard, object storage with API for image coadds, Kubernetes orchestration on Openstack platform\n",
       "complementary_datasets": "user-generated data products\n",
       "use_cases": "",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",
@@ -741,6 +752,7 @@
       "software_services": "CosmoHub:\nWeb portal for interactive exploration and distribution of massive cosmological datasets\nFull dataset plots (over all rows): May use sampling / Cone search tool / 1D histogram & 2D heatmap\nTAP + ADQL interfaces in development\n",
       "complementary_datasets": "~15 different projects (Gaia, DES, PAU, Euclid, DESI, COSMOS, KiDS, GLADE, CFHTLenS, ...)\nincluding DESC DC2 (Object and Truth-match tables)\n",
       "use_cases": "Catalog validation / exploration / crossmatch\nLarge Scale Structure algorithms (photo-z, 2-point correlation functions, ...)\nGalaxy simulations\n",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",
@@ -824,6 +836,7 @@
       "software_services": "Full RSP deployment\nOptions to exploit technologies from ‘nearby’ programmes – such as SKA, Euclid, and Gaia\nRucio for distributed data management (tbc); Ctrl-BPS/ Parsl/ Slurm – batch processing for  HPC (tbc)\n",
       "complementary_datasets": "LSST-VISTA fused products; crossmatch catalogues for topical surveys, Edinburgh Wide-field Astronomy Unit survey catalogues (via TAP)\n",
       "use_cases": "Full range of science cases\nCo-location with Lasair Community Broker for transient science\n",
+      "science_collaboration_agreements": "",
       "documentation": [
         {
           "title": "Onboarding guide",

@@ -69,6 +69,7 @@ use_cases: |
   DIA algorithms for heterogeneous transient follow-ups.
 
 # === Science Collaboration agreements made ===========================
+science_collaboration_agreements: ""
 
 # === Onboarding & documentation links (please fill in) ====================
 documentation:
