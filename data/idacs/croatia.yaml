@@ -66,7 +66,10 @@ use_cases: |
   Stellar astrophysics, including period finding, TRILEGAL Milky Way simulation, and microlensing light curves
 
 # === Science Collaboration agreements made ===========================
-science_collaboration_agreements: ""
+science_collaboration_agreements: |
+  Solar System (May 2026)
+  Transients and Variable Stars (pending)
+  Stars Milky Way and Local Volume (pending)
 
 # === Onboarding & documentation links (please fill in) ====================
 documentation:
