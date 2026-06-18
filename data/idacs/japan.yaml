@@ -10,8 +10,8 @@ country: "Japan"
 slug: "japan"
 
 location:
-  city:        "Mitaka"
-  institution: "National Astronomical Observatory of Japan (NAOJ)"
+  city:        "Mitaka, Tokyo"
+  institution: "National Astronomical Observatory of Japan (NAOJ) and Kavli IPMU"
   lat: 35.675
   lng: 139.541
 
