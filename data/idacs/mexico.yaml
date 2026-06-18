@@ -10,10 +10,10 @@ country: "Mexico"
 slug: "mexico"
 
 location:
-  city:        "Puebla"
-  institution: "INAOE"
-  lat: 19.022
-  lng: -98.313
+  city:        "Mexico City"
+  institution: "Universidad Nacional Autónoma de México (UNAM)"
+  lat: 19.3263
+  lng: -99.1762
 
 # === Rubin data products that will be hosted at this IDAC =================
 data_products:
