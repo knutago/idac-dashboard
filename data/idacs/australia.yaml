@@ -10,10 +10,10 @@ country: "Australia"
 slug: "australia"
 
 location:
-  city:        "Perth"
-  institution: "Pawsey Supercomputing Centre"
-  lat: -31.978
-  lng: 115.819
+  city:        "Melbourne"
+  institution: "Swinburne University"
+  lat: -37.8199
+  lng: 145.03586
 
 # === Rubin data products that will be hosted at this IDAC =================
 data_products:
